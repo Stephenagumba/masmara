@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masmara Travel Blog</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .blog-card:hover img { transform: scale(1.05); }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-700">Masmara Blog</h1>
+      <nav>
+        <a href="#" class="text-gray-600 hover:text-green-700 px-4">Home</a>
+        <a href="#" class="text-gray-600 hover:text-green-700 px-4">Blog</a>
+        <a href="#" class="text-gray-600 hover:text-green-700 px-4">Destinations</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-green-700 text-white py-20 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-extrabold mb-4">Discover Kenya through Stories</h2>
+      <p class="text-lg">Get inspired with travel guides, wildlife facts, and safari tips from Masmara Tour Agency.</p>
+    </div>
+  </section>
+
+  <!-- Blog Posts Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16">
+    <h3 class="text-2xl font-bold mb-6 text-center">Latest Articles</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Blog Post Card -->
+      <div class="bg-white rounded-xl shadow blog-card overflow-hidden transition-transform duration-300">
+        <img src="https://source.unsplash.com/600x400/?masai-mara,lions" alt="Masai Mara Safari" class="w-full h-48 object-cover transition-transform duration-300" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Top 5 Things to Do in Masai Mara</h4>
+          <p class="text-gray-600 text-sm mb-3">Explore hot air balloon rides, game drives, cultural visits, and more.</p>
+          <a href="#" class="text-green-700 font-medium hover:underline">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Post Card -->
+      <div class="bg-white rounded-xl shadow blog-card overflow-hidden transition-transform duration-300">
+        <img src="https://source.unsplash.com/600x400/?elephant,kenya" alt="Elephants in Amboseli" class="w-full h-48 object-cover transition-transform duration-300" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">The Gentle Giants of Amboseli</h4>
+          <p class="text-gray-600 text-sm mb-3">Why Amboseli is the best place in Africa to see wild elephants up close.</p>
+          <a href="#" class="text-green-700 font-medium hover:underline">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Post Card -->
+      <div class="bg-white rounded-xl shadow blog-card overflow-hidden transition-transform duration-300">
+        <img src="https://source.unsplash.com/600x400/?giraffe,nairobi" alt="Giraffe Centre" class="w-full h-48 object-cover transition-transform duration-300" />
+        <div class="p-6">
+          <h4 class="text-xl font-semibold mb-2">Visiting the Nairobi Giraffe Centre</h4>
+          <p class="text-gray-600 text-sm mb-3">A fun, family-friendly experience feeding giraffes in the capital city.</p>
+          <a href="#" class="text-green-700 font-medium hover:underline">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="bg-white py-12">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-xl font-bold mb-4">Browse by Category</h3>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="#" class="bg-green-100 text-green-700 px-4 py-2 rounded-full hover:bg-green-200 transition">Safaris</a>
+        <a href="#" class="bg-green-100 text-green-700 px-4 py-2 rounded-full hover:bg-green-200 transition">Wildlife</a>
+        <a href="#" class="bg-green-100 text-green-700 px-4 py-2 rounded-full hover:bg-green-200 transition">Culture</a>
+        <a href="#" class="bg-green-100 text-green-700 px-4 py-2 rounded-full hover:bg-green-200 transition">Beaches</a>
+        <a href="#" class="bg-green-100 text-green-700 px-4 py-2 rounded-full hover:bg-green-200 transition">Photography</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-green-700 text-white text-center py-12">
+    <h3 class="text-2xl font-semibold mb-2">Want to Share Your Safari Story?</h3>
+    <p class="mb-4">Submit your experience and get featured on our blog!</p>
+    <a href="#" class="inline-block bg-white text-green-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition">Submit Your Story</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 text-center text-sm py-6 text-gray-600">
+    &copy; 2025 Masmara Tour Agency. All rights reserved.
+  </footer>
+
+</body>
+</html>

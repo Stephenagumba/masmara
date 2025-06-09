@@ -1,0 +1,101 @@
+
+  .carousel {
+      position: relative;
+      width: 600px;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel img.active {
+      opacity: 1;
+    }
+   .carousel {
+  width: auto;   /* Change this to your desired width */
+  height: 240px;  /* Change this to your desired height */
+}
+
+      .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 45%; /* Take up 45% of the row, wrap at small screens */
+      max-width: 45%;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .description {
+      padding: 10px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Responsive for mobile */
+    @media (max-width: 600px) {
+      .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+      }
+    }  
+.travel-banner {
+  background-color: #1a1a1a; /* Black or near black */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.travel-banner h2 {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.travel-banner p {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.travel-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}g
+
+.travel-button:hover {
+  background-color: white;
+  color: #1a1a1a;
+}
+img{
+    height: 80px;
+    width: auto;
+}

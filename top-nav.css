@@ -1,0 +1,43 @@
+ body {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+ .top-nav{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     background-color: white;
+  
+ }
+ .top-nav>.image-logo> .logo{
+     
+     height: 50px;
+     width: auto;
+     border-radius: 30px;
+     margin-left: 10px;
+     margin-top: 10px;
+ }
+ 
+.icon-wrapper{
+    display: flex;
+    height: 5%;
+    background-color: black;
+    justify-content: space-around;
+}
+.icon-wrapper i{
+    margin-top:20px;
+}
+.icon-wrapper a{
+  color: white;
+}
+.icon-wrapper hover{
+    color: blue;
+    transition: 0.5sec;
+}
+.welcome-message h2{
+      color:red;
+      font-weight: bold;
+      font-size: 2em;
+      font-family:Sans-Serif;
+ }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Masmara Tour Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-green-700">Masmara Tour Agency</h1>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
+        <p class="mb-4 text-gray-600">We'd love to hear from you. Whether you have questions about our safari packages or want to create a custom itinerary, our team is ready to assist you.</p>
+        <ul class="space-y-4">
+          <li><strong>Phone:</strong> <a href="tel:+254712345678" class="text-green-600 hover:underline">+254 712 345 678</a></li>
+          <li><strong>Email:</strong> <a href="mailto:info@masmaratours.co.ke" class="text-green-600 hover:underline">info@masmaratours.co.ke</a></li>
+          <li><strong>Office:</strong> Nairobi, Kenya</li>
+          <li><strong>Business Hours:</strong> Mon - Sat, 8:00am - 6:00pm</li>
+        </ul>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="bg-white rounded-xl shadow p-6">
+        <form class="space-y-4" onsubmit="return validateForm()">
+          <div>
+            <label for="name" class="block font-medium">Full Name</label>
+            <input type="text" id="name" name="name" class="mt-1 w-full border border-gray-300 rounded px-4 py-2" required>
+          </div>
+          <div>
+            <label for="email" class="block font-medium">Email Address</label>
+            <input type="email" id="email" name="email" class="mt-1 w-full border border-gray-300 rounded px-4 py-2" required>
+          </div>
+          <div>
+            <label for="message" class="block font-medium">Message</label>
+            <textarea id="message" name="message" rows="4" class="mt-1 w-full border border-gray-300 rounded px-4 py-2" required></textarea>
+          </div>
+          <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700 transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map -->
+  <section class="mt-12">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 class="text-2xl font-semibold mb-4">Our Location</h2>
+      <div class="w-full h-64 md:h-96 rounded-lg overflow-hidden shadow-lg">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.3494421227323!2d36.82194681206528!3d-1.2920658022141619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d6aa7bde69%3A0x7ae8d0d190160b5a!2sNairobi!5e0!3m2!1sen!2ske!4v1627314197204!5m2!1sen!2ske" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 bg-gray-100 text-center text-sm py-6 text-gray-600">
+    &copy; 2025 Masmara Tour Agency. All rights reserved.
+  </footer>
+
+  <!-- Basic JS Validation -->
+  <script>
+    function validateForm() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+      if (!name || !email || !message) {
+        alert("Please fill in all fields.");
+        return false;
+      }
+      alert("Your message has been sent. Thank you!");
+      return true;
+    }
+  </script>
+</body>
+</html>
