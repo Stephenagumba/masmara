@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenyan Photography | MasMara Tour Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+    }
+    .grayscale-hover img {
+      filter: grayscale(100%);
+      transition: filter 0.5s;
+    }
+    .grayscale-hover img:hover {
+      filter: grayscale(0%);
+    }
+  </style>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Header -->
+  <header class="p-6 border-b border-white flex justify-between items-center">
+    <h1 class="text-3xl font-bold">MasMara Tour Agency</h1>
+    <nav>
+      <ul class="flex space-x-6 text-white text-sm">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="culture.html" class="hover:underline">Culture</a></li>
+        <li><a href="gallery.html" class="hover:underline">Photography</a></li>
+        <li><a href="contact.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-16 px-6">
+    <h2 class="text-5xl font-bold mb-4">Capturing Kenya Through the Lens</h2>
+    <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+      Discover the beauty of Kenya’s people, landscapes, and wildlife in stunning black and white photography.
+    </p>
+  </section>
+
+  <!-- Dynamic Gallery -->
+  <section class="px-6 py-12 max-w-6xl mx-auto">
+    <!-- Main Image -->
+    <div class="rounded-2xl overflow-hidden shadow-xl mb-8">
+      <img id="mainImage" src="photos/1749485245081.jpg" 
+           alt="Main View" class="w-full h-96 object-cover grayscale" />
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 grayscale-hover">
+      <img src="photos/1749485297218.jpg" class="cursor-pointer rounded-2xl" onclick="setMainImage(this.src)">
+      <img src="photos/images (26).jpeg" class="cursor-pointer rounded-2xl" onclick="setMainImage(this.src)">
+      <img src="photos/1749485353316.jpg" class="cursor-pointer rounded-2xl" onclick="setMainImage(this.src)">
+      <img src="photos/1749485398655.jpg" class="cursor-pointer rounded-2xl" onclick="setMainImage(this.src)">
+      <img src="photos/1749485416105.jpg" class="cursor-pointer rounded-2xl" onclick="setMainImage(this.src)">
+      <img src="photos/1749485495495.jpg" class="cursor-pointer rounded-2xl" onclick="setMainImage(this.src)">
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-16 px-6">
+    <h3 class="text-3xl font-bold mb-4">Book a Photography Safari</h3>
+    <p class="text-gray-300 max-w-xl mx-auto mb-6">
+      Join our expert photographers and explore Kenya’s most photogenic locations—from the Great Rift Valley to tribal villages.
+    </p>
+    <a href="#" class="bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-300 transition">
+      Reserve Your Spot
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-400 text-sm py-6 border-t border-white mt-12">
+    &copy; 2025 MasMara Tour Agency. All rights reserved.
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function setMainImage(src) {
+      const main = document.getElementById('mainImage');
+      main.src = src.replace(/w=600/, 'w=1200'); // Load higher res
+    }
+  </script>
+
+</body>
+</html>
